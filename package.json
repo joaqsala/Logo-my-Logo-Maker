@@ -1,0 +1,26 @@
+{
+  "name": "logo-my-logo-maker",
+  "version": "1.0.0",
+  "description": "Application to make an SVG logo from user  selected criteria",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaqsala/Logo-my-Logo-Maker.git"
+  },
+  "author": "Joaquin Salazar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaqsala/Logo-my-Logo-Maker/issues"
+  },
+  "homepage": "https://github.com/joaqsala/Logo-my-Logo-Maker#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
