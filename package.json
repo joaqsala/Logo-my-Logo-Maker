@@ -22,5 +22,8 @@
   "homepage": "https://github.com/joaqsala/Logo-my-Logo-Maker#readme",
   "devDependencies": {
     "jest": "^29.5.0"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
   }
 }
