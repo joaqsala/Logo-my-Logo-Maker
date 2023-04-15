@@ -39,8 +39,8 @@ const questions = () => {
     .then((answers) => {
         const svgContent = renderSVG(answers);
     
-        fs.writeFile('logo.svg', svgContent, (err) =>
-        err ? console.log(err) : console.log('Successfully created logo.svg!')
+        fs.writeFile('../examples/logo.svg', svgContent, (err) =>
+        err ? console.log(err) : console.log('Generated logo.svg!')
         );
     })
     .catch((error) => {
