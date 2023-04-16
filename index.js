@@ -1,6 +1,8 @@
 // Included packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const {renderSVG} = require('./lib/shapes.js');
+
 
 const questions = () => {
     return inquirer.prompt([
@@ -38,9 +40,10 @@ const questions = () => {
     }
     ])
     .then((answers) => {
+        console.log(answers)
         const svgContent = renderSVG(answers);
     
-        fs.writeFile('../examples/logo.svg', svgContent, (err) =>
+        fs.writeFile('./examples/logo.svg', svgContent, (err) =>
         err ? console.log(err) : console.log('Generated logo.svg!')
         );
     })
