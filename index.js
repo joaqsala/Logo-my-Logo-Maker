@@ -21,12 +21,13 @@ const questions = () => {
     type: 'input',
     message: 'Enter a color (or hexadecimal number) for the text of your logo.',
     name: 'textColor',
+    default: 'no fill'
     },
     {
     type: 'list',
     message: 'Select a shape for your logo.',
     choices: ["circle", "triangle", "square"],
-    name: 'shape',
+    name: 'logoShape',
     default: "circle"
     },
     {
