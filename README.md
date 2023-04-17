@@ -5,7 +5,7 @@
 
   ## Description
   
-  This repository contains the files to create a company logo as an svg asset. This logo maker utilizes command line prompts through the inquirer app and node js to deliver a simple, attractive logo. 
+  This repository contains the files to create a company logo as an svg asset. This logo maker utilizes node js and the inquirer app to produce command line prompts that deliver a simple, attractive logo. 
 
   ## Table of Contents
 
@@ -23,6 +23,10 @@ Go to https://github.com/joaqsala/Logo-my-Logo-Maker and clone the respository. 
 
 
 ## Usage 
+
+![Finished logo maker app run through](./images/screenshot-logo-making.png)
+
+Video walk through: https://watch.screencastify.com/v/5YhqAgWRWz2mWBdaoHNg
 
 This application is intended for those who want a simple, no-hassle, scalable logo in svg format.  Using the command line interface, a series of questions will appear - one after another. The answers will be saved and used to design and render your logo in svg format.
 
