@@ -3,6 +3,14 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const {renderSVG} = require('./lib/shapes.js');
 
+// function valColor(color) {
+//     const colorRegex = /^([a-z]+|\#[0-9a-f]{3,6})$/;
+//     if (!colorRegex.test(color)) {
+//         throw new Error('Invalid color entered. Please try again.');
+//     } 
+//     return true;
+//     }
+
 
 const questions = () => {
     return inquirer.prompt([
@@ -23,7 +31,7 @@ const questions = () => {
     type: 'input',
     message: 'Enter a color (or hexadecimal number) for the text of your logo.',
     name: 'textColor',
-    default: 'no fill'
+    default: 'white',
     },
     {
     type: 'list',
@@ -36,7 +44,7 @@ const questions = () => {
     type: 'input',
     message: 'Enter a color (or hexadecimal number) for the shape selected.',
     name: 'shapeColor',
-    default: "no fill"
+    default: "black",
     }
     ])
     .then((answers) => {
@@ -52,5 +60,6 @@ const questions = () => {
         console.log(error)
     }});
 }
+
 
 questions();
